@@ -5,7 +5,9 @@
 #include "Error.h"
 
 using namespace std;
-
+/**
+ * Test method
+ */
 void testBibliography() {
     // create bibliography
     Bibliography myBibliography(10);
@@ -31,16 +33,18 @@ void testBibliography() {
         myBibliography.insert(b2);
         myBibliography.insert(a1);
         cout << "Bibliography:" << endl << myBibliography; //display bibl.
-//        Medium *medium = myBibliography["Pa72"];
-//        string mediumToString = medium->toString();
-//        cout << mediumToString << endl;
         cout << endl << (*myBibliography["Pa72"]).toString() << endl;
     }
     catch (Error f) {
         cout << endl << f.getMessage() << endl;
     }
 }
-
+/**
+ * main - method
+ * @param argc
+ * @param argv
+ * @return
+ */
 int main(int argc, char *argv[]) {
     testBibliography();
     cin.sync();

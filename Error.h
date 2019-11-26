@@ -2,11 +2,13 @@
 #define PROGRAMMING3_ASSIGNMENT5_EXERCISE_5_1_ERROR_H
 
 #include <string>
-
+/**
+ * Error - class
+ */
 class Error {
     std::string message;
 public:
-    Error(std::string message);
+    explicit Error(std::string message);
     std::string getMessage();
 };
 
