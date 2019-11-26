@@ -9,17 +9,18 @@ class Article : public Medium {
     int pageNumber;
 
 public:
-    Article(const string &abbreviation, const string &author, const string &title, int yearOfPublication, const string &magazineName, int magazineNumber, int pageNumber);
+    Article(string abbreviation, string author, string title, int yearOfPublication, string magazineName,
+            int magazineNumber, int pageNumber);
 
     const string &getMagazineName() const;
 
     void setMagazineName(const string &magazineName);
 
-    const int & getMagazineNumber() const;
+    const int &getMagazineNumber() const;
 
     void setMagazineNumber(int magazinNumber);
 
-    const int & getPageNumber() const;
+    const int &getPageNumber() const;
 
     void setPageNumber(int pageNumber);
 

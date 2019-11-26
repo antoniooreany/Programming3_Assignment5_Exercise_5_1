@@ -1,40 +1,45 @@
 #include "Medium.h"
 
-Medium::Medium(const string &abbreviation, const string &author, const string &title, int yearOfPublication)
+Medium::Medium(string &abbreviation, string &author, string &title, int yearOfPublication)
         : abbreviation(abbreviation), author(author), title(title), yearOfPublication(yearOfPublication) {}
 
-const string Medium::getAbbreviation() const {
+string Medium::getAbbreviation() {
     return abbreviation;
 }
 
-void Medium::setAbbreviation(const string &abbreviation) {
+void Medium::setAbbreviation(string &abbreviation) {
     Medium::abbreviation = abbreviation;
 }
 
-const string &Medium::getAuthor() const {
+string &Medium::getAuthor() {
     return author;
 }
 
-void Medium::setAuthor(const string &author) {
+void Medium::setAuthor(string &author) {
     Medium::author = author;
 }
 
-const string &Medium::getTitle() const {
+string &Medium::getTitle() {
     return title;
 }
 
-void Medium::setTitle(const string &title) {
+void Medium::setTitle(string &title) {
     Medium::title = title;
 }
 
-const int Medium::getYearOfPublication() const {
+int Medium::getYearOfPublication() const {
     return yearOfPublication;
 }
 
-void Medium::setYearOfPublication(const int &yearOfPublication) {
+void Medium::setYearOfPublication(int &yearOfPublication) {
     Medium::yearOfPublication = yearOfPublication;
 }
 
 std::string Medium::toString() const {
     return "[" + abbreviation + "]" + author + ": " + title;
 }
+
+
+
+
+

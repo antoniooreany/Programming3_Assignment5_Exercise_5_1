@@ -1,7 +1,7 @@
 #include "Article.h"
 
-Article::Article(const string &abbreviation, const string &author, const string &title, int yearOfPublication,
-                 const string &magazineName, int magazineNumber, int pageNumber)
+Article::Article(string abbreviation, string author, string title, int yearOfPublication,
+                 string magazineName, int magazineNumber, int pageNumber)
         : Medium(abbreviation, author, title, yearOfPublication) {
     this->magazineName = magazineName;
     this->magazineNumber = magazineNumber;

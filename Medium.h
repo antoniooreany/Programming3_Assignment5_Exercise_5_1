@@ -6,31 +6,35 @@
 using namespace std;
 
 class Medium {
+
     string abbreviation;
     string author;
     string title;
     int yearOfPublication;
 
 public:
-    Medium(const string &abbreviation, const string &author, const string &title, int yearOfPublication);
 
-    const string getAbbreviation() const;
+    Medium(string &abbreviation, string &author, string &title, int yearOfPublication);
 
-    void setAbbreviation(const string &abbreviation);
+    string getAbbreviation();
 
-    const string &getAuthor() const;
+    void setAbbreviation(string &abbreviation);
 
-    void setAuthor(const string &author);
+    string &getAuthor();
 
-    const string &getTitle() const;
+    void setAuthor(string &author);
 
-    void setTitle(const string &title);
+    string &getTitle();
 
-    void setYearOfPublication(const int &yearOfPublication);
+    void setTitle(string &title);
 
-    const int getYearOfPublication() const;
+    void setYearOfPublication(int &yearOfPublication);
+
+    int getYearOfPublication() const;
 
     virtual std::string toString() const;
+
+//    int getYearOfPublication();
 };
 
 

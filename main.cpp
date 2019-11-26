@@ -41,8 +41,6 @@ void testBibliography() {
     }
 }
 
-
-
 int main(int argc, char *argv[]) {
     testBibliography();
     cin.sync();

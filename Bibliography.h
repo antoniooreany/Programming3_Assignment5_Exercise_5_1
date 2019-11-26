@@ -6,14 +6,13 @@
 
 class Bibliography {
     int size;
-    int capacity;
-    Medium **mediums/* = new Medium *[size]*/; //TODO p 6.33
+    std::vector<Medium*> mediums; //TODO p 6.33
 public:
     Bibliography(int size);
 
     void insert(Medium *medium);
 
-    /*const*/ Medium *operator[](const string &abbreviation) const;
+    Medium *operator[](const string &abbreviation);
 
     friend std::ostream &operator<<(std::ostream &os, const Bibliography &bibligraphy);
 

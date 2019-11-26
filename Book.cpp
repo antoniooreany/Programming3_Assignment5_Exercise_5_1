@@ -1,7 +1,7 @@
 #include "Book.h"
 
-Book::Book(const string &abbreviation, const string &author, const string &title, int yearOfPublication,
-           const string &publisher)
+Book::Book( string abbreviation,  string author,  string title, int yearOfPublication,
+            string publisher)
         : Medium(abbreviation, author, title, yearOfPublication) {
     this->publisher = publisher;
 }
