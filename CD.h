@@ -1,0 +1,13 @@
+
+#ifndef PROGRAMMING3_ASSIGNMENT5_EXERCISE_5_1_CD_H
+#define PROGRAMMING3_ASSIGNMENT5_EXERCISE_5_1_CD_H
+
+
+#include "Medium.h"
+
+class CD: public Medium {
+
+};
+
+
+#endif //PROGRAMMING3_ASSIGNMENT5_EXERCISE_5_1_CD_H
